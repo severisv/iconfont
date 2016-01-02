@@ -1,0 +1,19 @@
+ .fa-2x { font-size: 2em !important;}
+ .fa-3x { font-size: 3em !important;}
+ .fa-4x { font-size: 4em !important;}
+ 
+ .reveal i{
+    font-family: 'FontAwesome';
+    font-style: normal;
+	padding: 0.1em 0.5em;
+}
+ 
+ 
+.green {
+color:green;
+transition: color 1s ease-out;
+}
+
+.green:hover {
+color:orange;
+}

@@ -44,6 +44,9 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
  * GLOBAL STYLES
  *********************************************/
 
+
+
+ 
 html,
 body {
 	width: 100%;
@@ -57,10 +60,6 @@ body {
 	line-height: 1;
 }
 
-.reveal i{
-    font-family: 'FontAwesome';
-    font-style: normal;
-}
 
 ::selection {
 	background:#FF5E99;
