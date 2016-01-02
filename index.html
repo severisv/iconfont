@@ -88,40 +88,41 @@
 					</ul>				
 				</section>
 				<section>
+					<section>
 					<h2>Hvordan</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+							<li class="fragment">Eksporter som .svg</li>	
+							<li class="fragment">Samle de til en font med ditt foretrukne verktøy <i class="fa fa-cutlery"></i></li>	
+									
 					</ul>
-				</section>
-
-					<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+					<h2>fantastic.me</h2>
+					<img src="fantastic.png">
+					</section>
+					<section>
+				    <h2>front-end bygg (gulp)</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+gulp.task('iconFont', function () {
+    return gulp.src(_.path.svgIcons)
+        .pipe(iconfontCss({
+            fontName: fontName,
+            path: './gulpscripts/assets/_iconsTemplate.less',
+            targetPath: '../../Styles/Global/icons-compiled.less',
+            fontPath: '/Content/Fonts/Icons/'
+        }))
+        .pipe(iconfont({
+            fontName: fontName,
+            path: 'Content/Fonts/Icons/'
+        }))
+        .pipe(gulp.dest('Content/Fonts/Icons'));
+});
+					</code></pre>
+					</section>
+				</section>
+
+					<section>					
+					<h1>Takk! <br><i class="fa fa-smile-o"></i>
 					</section>
 				</section>
 			
